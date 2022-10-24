@@ -129,3 +129,11 @@ export const iconTeleStyle = {
     fontSize: '35px',
     color: '#0088cc',
 }
+
+export const DivLink = styled.div`
+    max-width: 700px;
+
+    a {
+        text-decoration: none;
+    }
+`;

@@ -4,17 +4,16 @@ import AOS from 'aos';
 import CapaLivro from '../../assets/images/capaLivro.png';
 import borderSectionOne from '../../assets/images/border-section-one.svg'
 import { Button, Container, Navbar } from 'react-bootstrap';
-import { buttonSectionFour, buttonSectionOne, ContainerNavBar, ContainerSectionOne, ContainerSectionThree, DivAllCardsSectionFour, DivAllCardsSectionThree, DivBorderBottom, DivCardSectionFour, DivCardSectionThree, DivContentHeader, DivSectionFour, DivSectionThree, DivSectionTwo, iconCardStyle, iconList, NavStyle, PAreYouReady, PFullPrice, PInstallmentPrice, PItensList, PSubTitleCardSectionFour, PSubTitleSectionOne, PTitleCardSectionFour, PTitleSectionFour, PTitleSectionOne, PTitleSectionTwo, SectionOne, SubTitleCardSectionThree, TitleCardSectionThree, TitleSectionThree } from './styles';
-import { AiOutlineHtml5 } from 'react-icons/ai';
-import { TbBrandCss3, TbBrandJavascript } from 'react-icons/tb';
-import { BsCheckAll } from 'react-icons/bs';
+import { buttonSectionFour, buttonSectionOne, ContainerNavBar, ContainerSectionOne, ContainerSectionThree, DivAllCardsSectionFour, DivAllCardsSectionThree, DivBorderBottom, DivCardSectionFour, DivCardSectionThree, DivContentHeader, DivItems, DivSectionFour, DivSectionThree, DivSectionTwo, iconCardStyle, iconList, NavStyle, PAreYouReady, PFullPrice, PInstallmentPrice, PInstallmentText, PItensList, PSubTitleCardSectionFour, PSubTitleSectionOne, PTitleCardSectionFour, PTitleSectionFour, PTitleSectionOne, PTitleSectionTwo, SectionOne, SubTitleCardSectionThree, TitleCardSectionThree, TitleSectionThree } from './styles';
+import { TbBrandCss3, TbBrandJavascript, TbBrandHtml5 } from 'react-icons/tb';
+import { BsCheckAll, BsGraphUp } from 'react-icons/bs';
 import { SlGraduation } from 'react-icons/sl';
+import { RiSecurePaymentLine } from 'react-icons/ri';
 
 export default class EbookSaleScreen extends React.Component {
     componentDidMount() {
         AOS.init();
     }
-
 
     render() {
         return (
@@ -52,7 +51,7 @@ export default class EbookSaleScreen extends React.Component {
                         <TitleSectionThree>Um E-book completo para você</TitleSectionThree>
                         <DivAllCardsSectionThree>
                             <DivCardSectionThree>
-                                <AiOutlineHtml5 style={iconCardStyle} />
+                                <TbBrandHtml5 style={iconCardStyle} />
                                 <TitleCardSectionThree>Aprenda HTML</TitleCardSectionThree>
                                 <SubTitleCardSectionThree>Não acreditamos em teoria sem prática. Aqui você aprende fazendo! Já pensou criar seu próprio site?</SubTitleCardSectionThree>
                             </DivCardSectionThree>
@@ -76,13 +75,13 @@ export default class EbookSaleScreen extends React.Component {
                             </DivCardSectionThree>
 
                             <DivCardSectionThree>
-                                <TbBrandJavascript style={iconCardStyle} />
+                                <BsGraphUp style={iconCardStyle} />
                                 <TitleCardSectionThree>Aprenda do zero</TitleCardSectionThree>
                                 <SubTitleCardSectionThree>No Front-end, o início você começa do zero. Aprenda a desenvolver desde sites simples até aplicativos mais avançados</SubTitleCardSectionThree>
                             </DivCardSectionThree>
 
                             <DivCardSectionThree>
-                                <TbBrandJavascript style={iconCardStyle} />
+                                <RiSecurePaymentLine style={iconCardStyle} />
                                 <TitleCardSectionThree>Risco zero</TitleCardSectionThree>
                                 <SubTitleCardSectionThree>Se você iniciar o curso e identificar que ele não é pra você, não se preocupe. Dentro de sete dias nós devolvemos 100% do seu dinheiro</SubTitleCardSectionThree>
                             </DivCardSectionThree>
@@ -95,39 +94,41 @@ export default class EbookSaleScreen extends React.Component {
                         <PTitleSectionFour>Meus planos</PTitleSectionFour>
                         <DivAllCardsSectionFour>
                             <DivCardSectionFour className='main'>
-                                <div className='border-bottom'>
+                                <DivBorderBottom className='border-bottom'>
                                     <PTitleCardSectionFour>E-book + Mentoria</PTitleCardSectionFour>
                                     <PSubTitleCardSectionFour>O famoso "tudo em um".</PSubTitleCardSectionFour>
-                                </div>
+                                </DivBorderBottom>
                                 <DivBorderBottom>
-                                    <PInstallmentPrice>4x de <span>R$ 14,97</span></PInstallmentPrice>
+                                    <PInstallmentText>Em até 4x de </PInstallmentText>
+                                    <PInstallmentPrice>R$ 14,97</PInstallmentPrice>
                                     <PFullPrice>Ou R$ 59,90 à vista</PFullPrice>
                                     <Button style={buttonSectionFour}>Comprar agora</Button>
                                 </DivBorderBottom>
-                                <div>
+                                <DivItems>
                                     <PItensList><BsCheckAll style={iconList} />Mentoria exclusiva</PItensList>
                                     <PItensList><BsCheckAll style={iconList} />Discord privado</PItensList>
                                     <PItensList><BsCheckAll style={iconList} />Telegram privado</PItensList>
                                     <PItensList><BsCheckAll style={iconList} />E-book</PItensList>
                                     <PItensList><BsCheckAll style={iconList} />Acesso à novidades</PItensList>
-                                </div>
+                                </DivItems>
                             </DivCardSectionFour>
 
                             <DivCardSectionFour>
-                                <div className='border-bottom'>
+                                <DivBorderBottom>
                                     <PTitleCardSectionFour>E-book</PTitleCardSectionFour>
                                     <PSubTitleCardSectionFour>Acesso ao e-book</PSubTitleCardSectionFour>
-                                </div>
+                                </DivBorderBottom>
                                 <DivBorderBottom>
-                                    <PInstallmentPrice>3x de <span>R$ 13,30</span></PInstallmentPrice>
+                                    <PInstallmentText>Em até 3x de </PInstallmentText>
+                                    <PInstallmentPrice>R$ 13,30</PInstallmentPrice>
                                     <PFullPrice>ou R$ 39,90 à vista</PFullPrice>
                                     <Button style={buttonSectionFour}>Comprar agora</Button>
                                 </DivBorderBottom>
-                                <div>
+                                <DivItems>
                                     <PItensList><BsCheckAll style={iconList} />Discord privado</PItensList>
                                     <PItensList><BsCheckAll style={iconList} />Telegram privado</PItensList>
                                     <PItensList><BsCheckAll style={iconList} />E-book</PItensList>
-                                </div>
+                                </DivItems>
                             </DivCardSectionFour>
                         </DivAllCardsSectionFour>
                     </ContainerSectionThree>

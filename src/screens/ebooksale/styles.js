@@ -93,7 +93,8 @@ export const buttonSectionOne = {
 export const DivSectionThree = styled.div`
     text-align: center;
     display: block;
-    padding: 40px 0px;
+    padding: 60px 0px;
+    background-color: #ededed;
 `;
 
 export const DivCardSectionThree = styled.div`
@@ -160,7 +161,7 @@ export const DivSectionFour = styled.div`
     display: block;
     background-color: ${Colors.backgroundColor};
     color: white;
-    padding: 40px 0px;
+    padding: 60px 0px;
 `;
 
 export const PTitleSectionFour = styled.p`
@@ -181,7 +182,7 @@ export const DivAllCardsSectionFour = styled.div`
 
 export const DivCardSectionFour = styled.div`
     padding: 25px 20px;
-    margin: 5px;
+    margin: 10px;
     border-radius: 10px;
     width: 300px;
     /* height: 350px; */
@@ -216,13 +217,15 @@ export const PSubTitleCardSectionFour = styled.p`
 `;
 
 export const PInstallmentPrice = styled.p`
+    font-size: 43px;
+    font-weight: 600;
+    color: ${Colors.primaryColor};
+    margin: 0px;
+`;
+
+export const PInstallmentText = styled.p`
     font-size: 20px;
     margin: 10px 0px 0px;
-
-    span {
-        font-size: 40px;
-        color: ${Colors.primaryColor};
-    }
 `;
 
 export const PFullPrice = styled.p`
@@ -255,6 +258,9 @@ export const buttonSectionFour = {
 }
 
 export const DivBorderBottom = styled.div`
-    border-bottom: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color)!important;
-    margin-bottom: 15px;
+    border-bottom: var(--bs-border-width) var(--bs-border-style) #000!important;
+`;
+
+export const DivItems = styled.div`
+    margin-top: 15px;
 `;

@@ -1,12 +1,13 @@
 import React from 'react';
 import Logo from '../../assets/images/logo.jpg';
 import PurpleShaddow from '../../assets/images/shaddow.svg';
-import { Avatar, CardDiv, CenterScreen, BorderAvatar, DivIconDescription, iconDiscStyle, iconInstaStyle, iconTeleStyle, iconYTStyle, MainDiv, PDescription, PTitle, shareStyle, DivAvatar, CardMainDiv, iconEbook } from './styles';
+import { Avatar, CardDiv, CenterScreen, BorderAvatar, DivIconDescription, iconDiscStyle, iconInstaStyle, iconTeleStyle, iconYTStyle, MainDiv, PDescription, PTitle, shareStyle, DivAvatar, CardMainDiv, iconEbook, DivLink } from './styles';
 import { BsShare } from 'react-icons/bs';
 import { FaDiscord, FaTelegramPlane } from 'react-icons/fa';
 import { FiYoutube } from 'react-icons/fi';
 import { GiBlackBook } from 'react-icons/gi';
 import { Container } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 export default class Home extends React.Component {
     redirectLink = (link) => {
@@ -24,13 +25,17 @@ export default class Home extends React.Component {
                     </DivAvatar>
                     <PTitle>Tech Daniel's</PTitle>
                     <CenterScreen>
-                        <CardMainDiv onClick={() => window.location.href = '/ebooksale'}>
-                            <DivIconDescription>
-                                <GiBlackBook style={iconEbook} />
-                                <PDescription>E-book + Mentoria - Front-end, o início</PDescription>
-                            </DivIconDescription>
-                            <BsShare style={shareStyle} />
-                        </CardMainDiv>
+                        <DivLink>
+                            <Link to='/ebooksale'>
+                                <CardMainDiv>
+                                    <DivIconDescription>
+                                        <GiBlackBook style={iconEbook} />
+                                        <PDescription>E-book + Mentoria - Front-end, o início</PDescription>
+                                    </DivIconDescription>
+                                    <BsShare style={shareStyle} />
+                                </CardMainDiv>
+                            </Link>
+                        </DivLink>
                         <CardDiv onClick={() => this.redirectLink('https://www.youtube.com/c/TechDaniels')}>
                             <DivIconDescription>
                                 <FiYoutube style={iconYTStyle} />
