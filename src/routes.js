@@ -7,7 +7,7 @@ const MyRoutes = () => (
     <React.Fragment>
         <Router>
             <Routes>
-                <Route exact path="/links-page" element={<Home />}></Route>
+                <Route exact path="/" element={<Home />}></Route>
                 <Route exact path="/ebooksale" element={<EbookSaleScreen />}></Route>
             </Routes>
         </Router>
