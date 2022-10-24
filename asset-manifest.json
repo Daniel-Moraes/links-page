@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/links-page/static/css/main.5a7f353d.css",
-    "main.js": "/links-page/static/js/main.c75fdb31.js",
+    "main.js": "/links-page/static/js/main.a6617e00.js",
     "static/media/logo.jpg": "/links-page/static/media/logo.c89f476334e007b81ac1.jpg",
     "static/media/capaLivro.png": "/links-page/static/media/capaLivro.2973315dfeb9c4838be5.png",
     "static/media/shaddow.svg": "/links-page/static/media/shaddow.b10e8e938c8f1e131f271f6f97d86284.svg",
     "index.html": "/links-page/index.html",
     "static/media/border-section-one.svg": "/links-page/static/media/border-section-one.54b39b852a7d9f2e73865acb55b87db8.svg",
     "main.5a7f353d.css.map": "/links-page/static/css/main.5a7f353d.css.map",
-    "main.c75fdb31.js.map": "/links-page/static/js/main.c75fdb31.js.map"
+    "main.a6617e00.js.map": "/links-page/static/js/main.a6617e00.js.map"
   },
   "entrypoints": [
     "static/css/main.5a7f353d.css",
-    "static/js/main.c75fdb31.js"
+    "static/js/main.a6617e00.js"
   ]
 }
