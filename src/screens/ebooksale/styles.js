@@ -3,7 +3,6 @@ import styled from "styled-components";
 import Colors from "../../constants/Colors";
 
 export const DivContentHeader = styled.div`
-    display: -ms-grid;
     display: grid;
     -webkit-box-align: center;
     -webkit-align-items: center;
@@ -17,6 +16,33 @@ export const DivContentHeader = styled.div`
     -ms-grid-rows: auto;
     grid-template-rows: auto;
     color: white;
+
+    @media screen and (max-width: 991px) {
+        min-height: auto;
+        grid-auto-flow: row;
+        grid-row-gap: 4rem;
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+
+        .cellphoneImgSectionOne {
+            -ms-grid-column-align: start;
+            justify-self: start; 
+            text-align: center;
+            -webkit-box-ordinal-group: -9998;
+            -webkit-order: -9999;
+            -ms-flex-order: -9999;
+            order: -9999;
+        }
+
+        .imgSectionOne {
+            max-width: 80%;
+            vertical-align: middle;
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        grid-row-gap: 3rem;
+    }
 `;
 
 export const NavStyle = styled.div`
@@ -57,7 +83,7 @@ export const ContainerNavBar = styled(Container)`
 
 export const SectionOne = styled.section`
     background-color: ${Colors.backgroundColor};
-    height: 1000px;
+    height: 100vh;
     position: relative;
 
     .borderSectionOne {

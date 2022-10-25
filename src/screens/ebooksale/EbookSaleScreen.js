@@ -25,7 +25,7 @@ export default class EbookSaleScreen extends React.Component {
                         </Navbar>
                     </NavStyle>
                 </ContainerNavBar>
-                <SectionOne>
+                {/* <SectionOne>
                     <ContainerSectionOne>
                         <DivContentHeader>
                             <div data-aos="fade-right" data-aos-duration="2000">
@@ -39,11 +39,31 @@ export default class EbookSaleScreen extends React.Component {
                         </DivContentHeader>
                     </ContainerSectionOne>
                     <img src={borderSectionOne} className="borderSectionOne" alt="border" />
+                </SectionOne> */}
+                <SectionOne>
+                    <ContainerSectionOne>
+                        <DivContentHeader>
+                            <div data-aos="fade-right" data-aos-duration="2000">
+                                <PTitleSectionOne>O melhor E-book passo a passo</PTitleSectionOne>
+                                <PSubTitleSectionOne>Comece a desenvolver seu primeiro site hoje mesmo!</PSubTitleSectionOne>
+                                <Button className='btn' style={buttonSectionOne}>Garantir meu E-book</Button>
+                            </div>
+                            <div className='cellphoneImgSectionOne'>
+                                {/* grid-template-columns: repeat(auto-fit, minmax(186px, 1fr)); */}
+                                <img className='imgSectionOne' src={CapaLivro} alt="logo" width={600} />
+                            </div>
+                        </DivContentHeader>
+                    </ContainerSectionOne>
+                    <img src={borderSectionOne} className="borderSectionOne" alt="border" />
                 </SectionOne>
                 <DivSectionTwo>
                     <Container>
                         <PTitleSectionTwo>Para quem é este E-book</PTitleSectionTwo>
-                        <p>Para todas as pessoas que desejam iniciar uma carreira como desenvolvedor. Você aprenderá a criar seu primeiro site de forma simples, sem enrolação. Iremos te ajudar a alavancar a sua carreira Front-end.</p>
+                        <p>Para todas as pessoas que desejam iniciar uma carreira como desenvolvedor. Você aprenderá a criar seu primeiro site de forma simples, sem enrolação. Iremos te ajudar a alavancar a sua carreira Front-end.
+                            Já pensou que em menos de um ano, você estará pronto para construir um aplicativo do zero?
+                            Com nosso curso, você terá uma visão ampla de todo projeto para criação de uma aplicação e poderá definir o seu caminho profissional, apto para atuar no Front-end, Back-end e Mobile em uma das maiores empresas do Brasil e do mundo.
+                            Com a Fullture você pode chegar mais longe!
+                        </p>
                     </Container>
                 </DivSectionTwo>
                 <DivSectionThree>
