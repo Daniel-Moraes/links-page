@@ -83,7 +83,7 @@ export const ContainerNavBar = styled(Container)`
 
 export const SectionOne = styled.section`
     background-color: ${Colors.backgroundColor};
-    height: 100vh;
+    height: 80vh;
     position: relative;
 
     .borderSectionOne {
@@ -122,6 +122,35 @@ export const DivSectionThree = styled.div`
     display: block;
     padding: 60px 0px;
     background-color: #ededed;
+
+    .swiper {
+  width: 70%;
+  height: 400px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide {
+  width: 20%;
+}
 `;
 
 export const DivCardSectionThree = styled.div`
@@ -172,6 +201,7 @@ export const DivAllCardsSectionThree = styled.div`
     justify-content: center;
     flex-wrap: wrap;
     max-width: 950px;
+    justify-content: space-evenly;
 `;
 
 export const ContainerSectionThree = styled(Container)`

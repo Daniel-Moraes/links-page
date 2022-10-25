@@ -1,4 +1,7 @@
 import 'aos/dist/aos.css';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import "swiper/css/navigation";
 import React from 'react';
 import AOS from 'aos';
 import CapaLivro from '../../assets/images/capaLivro.png';
@@ -9,6 +12,8 @@ import { TbBrandCss3, TbBrandJavascript, TbBrandHtml5 } from 'react-icons/tb';
 import { BsCheckAll, BsGraphUp } from 'react-icons/bs';
 import { SlGraduation } from 'react-icons/sl';
 import { RiSecurePaymentLine } from 'react-icons/ri';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination } from "swiper";
 
 export default class EbookSaleScreen extends React.Component {
     componentDidMount() {
@@ -25,21 +30,6 @@ export default class EbookSaleScreen extends React.Component {
                         </Navbar>
                     </NavStyle>
                 </ContainerNavBar>
-                {/* <SectionOne>
-                    <ContainerSectionOne>
-                        <DivContentHeader>
-                            <div data-aos="fade-right" data-aos-duration="2000">
-                                <PTitleSectionOne>O melhor E-book passo a passo</PTitleSectionOne>
-                                <PSubTitleSectionOne>Comece a desenvolver seu primeiro site hoje mesmo!</PSubTitleSectionOne>
-                                <Button className='btn' style={buttonSectionOne}>Garantir meu E-book</Button>
-                            </div>
-                            <div>
-                                <img src={CapaLivro} alt="logo" width={600} />
-                            </div>
-                        </DivContentHeader>
-                    </ContainerSectionOne>
-                    <img src={borderSectionOne} className="borderSectionOne" alt="border" />
-                </SectionOne> */}
                 <SectionOne>
                     <ContainerSectionOne>
                         <DivContentHeader>
@@ -153,6 +143,30 @@ export default class EbookSaleScreen extends React.Component {
                         </DivAllCardsSectionFour>
                     </ContainerSectionThree>
                 </DivSectionFour>
+                <DivSectionThree>
+                    <Swiper
+                        slidesPerView={"auto"}
+                        spaceBetween={30}
+                        loop={true}
+                        loopFillGroupWithBlank={true}
+                        pagination={{
+                            clickable: true,
+                        }}
+                        navigation={true}
+                        modules={[Pagination, Navigation]}
+                        className="mySwiper"
+                    >
+                        <SwiperSlide>Slide 1</SwiperSlide>
+                        <SwiperSlide>Slide 2</SwiperSlide>
+                        <SwiperSlide>Slide 3</SwiperSlide>
+                        <SwiperSlide>Slide 4</SwiperSlide>
+                        <SwiperSlide>Slide 5</SwiperSlide>
+                        <SwiperSlide>Slide 6</SwiperSlide>
+                        <SwiperSlide>Slide 7</SwiperSlide>
+                        <SwiperSlide>Slide 8</SwiperSlide>
+                        <SwiperSlide>Slide 9</SwiperSlide>
+                    </Swiper>
+                </DivSectionThree>
             </>
         );
     }
