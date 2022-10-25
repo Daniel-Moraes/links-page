@@ -39,6 +39,7 @@ export const NavStyle = styled.div`
 export const DivSectionTwo = styled.div`
     text-align: center;
     display: block;
+    padding: 40px 0px;
 `;
 
 export const ContainerNavBar = styled(Container)`
