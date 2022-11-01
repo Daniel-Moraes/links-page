@@ -331,6 +331,14 @@ export const MySwiper = styled.div`
         width: 18rem;
         height: 85%;
     }
+
+    .swiper-button-next, .swiper-button-prev {
+        color: ${Colors.primaryColor} !important;
+    }
+
+    .swiper-pagination-bullet-active {
+        background: ${Colors.primaryColor};
+    }
 `;
 
 export const PTextSectionFive = styled.p`
