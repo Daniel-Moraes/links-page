@@ -6,8 +6,8 @@ import React from 'react';
 import AOS from 'aos';
 import CapaLivro from '../../assets/images/capaLivro.png';
 import borderSectionOne from '../../assets/images/border-section-one.svg'
-import { Button, Container, Navbar } from 'react-bootstrap';
-import { buttonSectionFour, buttonSectionOne, ContainerNavBar, ContainerSectionOne, ContainerSectionThree, DivAllCardsSectionFour, DivAllCardsSectionThree, DivBorderBottom, DivCardSectionFour, DivCardSectionThree, DivContentHeader, DivItems, DivSectionFour, DivSectionThree, DivSectionTwo, iconCardStyle, iconList, NavStyle, PAreYouReady, PFullPrice, PInstallmentPrice, PInstallmentText, PItensList, PSubTitleCardSectionFour, PSubTitleSectionOne, PTitleCardSectionFour, PTitleSectionFour, PTitleSectionOne, PTitleSectionTwo, SectionOne, SubTitleCardSectionThree, TitleCardSectionThree, TitleSectionThree } from './styles';
+import { Button, Container, Form, Navbar } from 'react-bootstrap';
+import { ButtonForm, buttonSectionFour, buttonSectionOne, ContainerNavBar, ContainerSectionOne, ContainerSectionSix, ContainerSectionThree, DivAllCardsSectionFour, DivAllCardsSectionThree, DivBorderBottom, DivCardSectionFour, DivCardSectionThree, DivContentHeader, DivFilterSectionSix, DivItems, DivSectionFive, DivSectionFour, DivSectionSix, DivSectionThree, DivSectionTwo, Footer, iconCardStyle, iconList, MySwiper, NavStyle, PAreYouReady, PFullPrice, PInstallmentPrice, PInstallmentText, PItensList, PMsgForm, PSubTitleCardSectionFour, PSubtitleForm, PSubTitleSectionOne, PSubtitleSectionSix, PTextFooter, PTextSectionFive, PTitleCardSectionFour, PTitleForm, PTitleSectionFour, PTitleSectionOne, PTitleSectionSix, PTitleSectionTwo, SectionOne, StarsSectionFive, SubTitleCardSectionThree, TitleCardSectionThree, TitleSectionThree } from './styles';
 import { TbBrandCss3, TbBrandJavascript, TbBrandHtml5 } from 'react-icons/tb';
 import { BsCheckAll, BsGraphUp } from 'react-icons/bs';
 import { SlGraduation } from 'react-icons/sl';
@@ -143,30 +143,127 @@ export default class EbookSaleScreen extends React.Component {
                         </DivAllCardsSectionFour>
                     </ContainerSectionThree>
                 </DivSectionFour>
-                <DivSectionThree>
-                    <Swiper
-                        slidesPerView={"auto"}
-                        spaceBetween={30}
-                        loop={true}
-                        loopFillGroupWithBlank={true}
-                        pagination={{
-                            clickable: true,
-                        }}
-                        navigation={true}
-                        modules={[Pagination, Navigation]}
-                        className="mySwiper"
-                    >
-                        <SwiperSlide>Slide 1</SwiperSlide>
-                        <SwiperSlide>Slide 2</SwiperSlide>
-                        <SwiperSlide>Slide 3</SwiperSlide>
-                        <SwiperSlide>Slide 4</SwiperSlide>
-                        <SwiperSlide>Slide 5</SwiperSlide>
-                        <SwiperSlide>Slide 6</SwiperSlide>
-                        <SwiperSlide>Slide 7</SwiperSlide>
-                        <SwiperSlide>Slide 8</SwiperSlide>
-                        <SwiperSlide>Slide 9</SwiperSlide>
-                    </Swiper>
-                </DivSectionThree>
+                <DivSectionFive>
+                    <MySwiper>
+                        <Swiper
+                            slidesPerView={"auto"}
+                            spaceBetween={30}
+                            loop={true}
+                            loopFillGroupWithBlank={true}
+                            pagination={{
+                                clickable: true,
+                            }}
+                            navigation={true}
+                            modules={[Pagination, Navigation]}
+                            className="mySwiper"
+                        >
+                            <SwiperSlide>
+                                <div className='d-block'>
+                                    <div className='d-flex mb-4'>
+                                        <StarsSectionFive /><StarsSectionFive /><StarsSectionFive /><StarsSectionFive /><StarsSectionFive />
+                                    </div>
+                                    <PTextSectionFive>"Mano mto obg pelo conteúdo, tenho apenas 13 anos, mas quero começar a aprender a programar. E esse será meu primeiro projeto de muitos. Mto obg"</PTextSectionFive>
+                                </div>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <div className='d-block'>
+                                    <div className='d-flex mb-4'>
+                                        <StarsSectionFive /><StarsSectionFive /><StarsSectionFive /><StarsSectionFive /><StarsSectionFive />
+                                    </div>
+                                    <PTextSectionFive>"Simples e prático, muito bom!"</PTextSectionFive>
+                                </div>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <div className='d-block'>
+                                    <div className='d-flex mb-4'>
+                                        <StarsSectionFive /><StarsSectionFive /><StarsSectionFive /><StarsSectionFive /><StarsSectionFive />
+                                    </div>
+                                    <PTextSectionFive>"Parabéns amigo! Muito boa sua didática."</PTextSectionFive>
+                                </div>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <div className='d-block'>
+                                    <div className='d-flex mb-4'>
+                                        <StarsSectionFive /><StarsSectionFive /><StarsSectionFive /><StarsSectionFive /><StarsSectionFive />
+                                    </div>
+                                    <PTextSectionFive>"Marivilha, ensina passo a passo, professor incrivel. Parabens"</PTextSectionFive>
+                                </div>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <div className='d-block'>
+                                    <div className='d-flex mb-4'>
+                                        <StarsSectionFive /><StarsSectionFive /><StarsSectionFive /><StarsSectionFive /><StarsSectionFive />
+                                    </div>
+                                    <PTextSectionFive>"Massa, Daniel! Obrigado pelo conteúdo! Me ajudou bastante!"</PTextSectionFive>
+                                </div>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <div className='d-block'>
+                                    <div className='d-flex mb-4'>
+                                        <StarsSectionFive /><StarsSectionFive /><StarsSectionFive /><StarsSectionFive /><StarsSectionFive />
+                                    </div>
+                                    <PTextSectionFive>"Conteúdo tá top, pae. Continua"</PTextSectionFive>
+                                </div>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <div className='d-block'>
+                                    <div className='d-flex mb-4'>
+                                        <StarsSectionFive /><StarsSectionFive /><StarsSectionFive /><StarsSectionFive /><StarsSectionFive />
+                                    </div>
+                                    <PTextSectionFive>"Simplesmente incrível!!! Aprendi algo, que eu achava absurdo, em poucas horas. Seu trabalho é incrível"</PTextSectionFive>
+                                </div>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <div className='d-block'>
+                                    <div className='d-flex mb-4'>
+                                        <StarsSectionFive /><StarsSectionFive /><StarsSectionFive /><StarsSectionFive /><StarsSectionFive />
+                                    </div>
+                                    <PTextSectionFive>"Top! Muito fácil de aprender!!!"</PTextSectionFive>
+                                </div>
+                            </SwiperSlide>
+                        </Swiper>
+                    </MySwiper>
+                </DivSectionFive>
+                <DivSectionSix>
+                    <DivFilterSectionSix>
+                        <ContainerSectionSix>
+                            <div>
+                                <PTitleSectionSix>
+                                    Chegou a hora
+                                    de você mudar sua
+                                    vida profissional!
+                                </PTitleSectionSix>
+                                <PSubtitleSectionSix>
+                                    Aprenda os primeiros passos
+                                    para você criar sites do zero
+                                </PSubtitleSectionSix>
+                            </div>
+                            <div>
+                                <PTitleForm>DÊ O PRIMEIRO PASSO AGORA!</PTitleForm>
+                                <PSubtitleForm>Preencha para receber mais informações</PSubtitleForm>
+                                <Form>
+                                    <Form.Group className="mb-3" controlId="name">
+                                        <Form.Label>Nome*</Form.Label>
+                                        <Form.Control type="text" required />
+                                    </Form.Group>
+                                    <Form.Group className="mb-3" controlId="email">
+                                        <Form.Label>Email address</Form.Label>
+                                        <Form.Control type="email" required />
+                                    </Form.Group>
+                                    <ButtonForm variant="primary" type="submit">
+                                        QUERO SABER MAIS
+                                    </ButtonForm>
+                                    <PMsgForm>*Prometemos não utilizar suas informações de contato para enviar qualquer tipo de SPAM.</PMsgForm>
+                                </Form>
+                            </div>
+                        </ContainerSectionSix>
+                    </DivFilterSectionSix>
+                </DivSectionSix>
+                <Footer>
+                    <Container className='p-4 text-center'>
+                        <PTextFooter>Daniel Moraes - Tech Daniel's</PTextFooter>
+                    </Container>
+                </Footer>
             </>
         );
     }

@@ -1,6 +1,8 @@
-import { Container } from "react-bootstrap";
+import { Button, Container } from "react-bootstrap";
+import { FaStar } from "react-icons/fa";
 import styled from "styled-components";
 import Colors from "../../constants/Colors";
+import imgBackgroundBook from '../../assets/images/imgBackgroundBook.png';
 
 export const DivContentHeader = styled.div`
     display: grid;
@@ -104,10 +106,18 @@ export const ContainerSectionOne = styled(Container)`
 export const PTitleSectionOne = styled.p`
     font-size: 33px;
     font-weight: 600;
+
+    @media screen and (max-width: 992px) {
+        font-size: 1.4rem;
+    }
 `;
 
 export const PSubTitleSectionOne = styled.p`
     font-size: 25px;    
+
+    @media screen and (max-width: 992px) {
+        font-size: 1.1rem;
+    }
 `;
 
 export const buttonSectionOne = {
@@ -122,35 +132,6 @@ export const DivSectionThree = styled.div`
     display: block;
     padding: 60px 0px;
     background-color: #ededed;
-
-    .swiper {
-  width: 70%;
-  height: 400px;
-}
-
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-
-  /* Center slide text vertically */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
-}
-
-.swiper-slide {
-  width: 20%;
-}
 `;
 
 export const DivCardSectionThree = styled.div`
@@ -320,4 +301,153 @@ export const DivBorderBottom = styled.div`
 
 export const DivItems = styled.div`
     margin-top: 15px;
+`;
+
+export const MySwiper = styled.div`
+    .swiper {
+        width: 70%;
+        height: 17rem;
+    }
+
+    .swiper-slide {
+        padding: 16px;
+        border: 1px solid ${Colors.primaryColor};
+        border-radius: 10px;
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+  /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        width: 18rem;
+        height: 85%;
+    }
+`;
+
+export const PTextSectionFive = styled.p`
+    text-align: justify;
+`;
+
+export const StarsSectionFive = styled(FaStar)`
+    color: ${Colors.primaryColor};
+`;
+
+export const DivSectionFive = styled.div`
+    text-align: center;
+    display: block;
+    padding: 60px 0px;
+    background-color: #ededed;
+`;
+
+export const DivSectionSix = styled.div`
+    background-image: url(${imgBackgroundBook});
+
+    min-height: 600px; 
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+`;
+
+export const ContainerSectionSix = styled(Container)`
+    display: grid;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    grid-auto-columns: 1fr;
+    grid-column-gap: 5rem;
+    grid-row-gap: 4rem;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: auto;
+    grid-template-rows: auto;
+    color: white;
+
+
+    @media screen and (max-width: 991px) {
+        min-height: auto;
+        grid-auto-flow: row;
+        grid-row-gap: 4rem;
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    }
+`;
+
+export const DivFilterSectionSix = styled.div`
+    backdrop-filter: brightness(0.4); 
+    padding: 40px 0px; 
+    min-height: 600px;
+    display: flex;
+`;
+
+export const PTitleForm = styled.p`
+    font-size: 30px;
+    font-weight: 600;
+    margin: 0;
+`;
+
+export const PSubtitleForm = styled.p`
+    font-size: 20px;
+    margin-bottom: 1.5rem;
+`;
+
+export const ButtonForm = styled(Button)`
+    margin-top: 1.5rem;
+    background-color: ${Colors.primaryColor};
+    border: 1px solid ${Colors.primaryColor};
+
+    :active {
+        background-color: rgb(98, 0, 255) !important;
+        border: 1px solid rgb(98, 0, 255) !important;
+    }
+
+    :hover {
+        background-color: rgb(98, 0, 255);
+        border: 1px solid rgb(98, 0, 255);
+    }
+
+    :focus {
+        background-color: rgb(98, 0, 255);
+        border: 1px solid rgb(98, 0, 255);
+    }
+
+    :focus-visible {
+        background-color: rgb(98, 0, 255);
+        border: 1px solid rgb(98, 0, 255);
+        box-shadow: 0 0 0 0.25rem rgba(98, 0, 255, .5);
+    }
+`;
+
+export const PMsgForm = styled.p`
+    font-size: 15px;
+    margin: 0.7rem 0px 0px;
+`;
+
+export const Footer = styled.div`
+    background-color: ${Colors.backgroundColor};
+`;
+
+export const PTextFooter = styled.p`
+    color: #fff;
+    margin: 0;
+`;
+
+export const PTitleSectionSix = styled.p`
+    font-size: 40px;
+    font-weight: 600;
+`;
+
+export const PSubtitleSectionSix = styled.p`
+    font-size: 25px;
 `;
