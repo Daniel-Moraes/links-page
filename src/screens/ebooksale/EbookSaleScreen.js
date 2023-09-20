@@ -4,7 +4,7 @@ import 'swiper/css/pagination';
 import "swiper/css/navigation";
 import React from 'react';
 import AOS from 'aos';
-import CapaLivro from '../../assets/images/capaLivro.png';
+import CapaLivro from '../../assets/images/capaLivro2.png';
 import borderSectionOne from '../../assets/images/border-section-one.svg'
 import { Button, Container, Form, Navbar } from 'react-bootstrap';
 import { ButtonForm, buttonSectionFour, buttonSectionOne, ContainerNavBar, ContainerSectionOne, ContainerSectionSix, ContainerSectionThree, DivAllCardsSectionFour, DivAllCardsSectionThree, DivBorderBottom, DivCardSectionFour, DivCardSectionThree, DivContentHeader, DivFilterSectionSix, DivItems, DivSectionFive, DivSectionFour, DivSectionSix, DivSectionThree, DivSectionTwo, Footer, iconCardStyle, iconList, MySwiper, NavStyle, PAreYouReady, PFullPrice, PInstallmentPrice, PInstallmentText, PItensList, PMsgForm, PSubTitleCardSectionFour, PSubtitleForm, PSubTitleSectionOne, PSubtitleSectionSix, PTextFooter, PTextSectionFive, PTitleCardSectionFour, PTitleForm, PTitleSectionFour, PTitleSectionOne, PTitleSectionSix, PTitleSectionTwo, SectionOne, StarsSectionFive, SubTitleCardSectionThree, TitleCardSectionThree, TitleSectionThree } from './styles';
@@ -40,7 +40,7 @@ export default class EbookSaleScreen extends React.Component {
                             </div>
                             <div className='cellphoneImgSectionOne'>
                                 {/* grid-template-columns: repeat(auto-fit, minmax(186px, 1fr)); */}
-                                <img className='imgSectionOne' src={CapaLivro} alt="logo" width={600} />
+                                <img className='imgSectionOne' src={CapaLivro} alt="logo" width={700} />
                             </div>
                         </DivContentHeader>
                     </ContainerSectionOne>
