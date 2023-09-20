@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/links-page/static/css/main.771dae57.css",
-    "main.js": "/links-page/static/js/main.2c8642e6.js",
+    "main.js": "/links-page/static/js/main.34b1c660.js",
     "static/media/imgBackgroundBook.png": "/links-page/static/media/imgBackgroundBook.c85c09c43d9327e92e61.png",
     "static/media/logo.jpg": "/links-page/static/media/logo.c89f476334e007b81ac1.jpg",
-    "static/media/capaLivro.png": "/links-page/static/media/capaLivro.2973315dfeb9c4838be5.png",
+    "static/media/capaLivro2.png": "/links-page/static/media/capaLivro2.99279e0b21a185709611.png",
     "static/media/shaddow.svg": "/links-page/static/media/shaddow.b10e8e938c8f1e131f271f6f97d86284.svg",
     "index.html": "/links-page/index.html",
     "static/media/border-section-one.svg": "/links-page/static/media/border-section-one.54b39b852a7d9f2e73865acb55b87db8.svg",
     "main.771dae57.css.map": "/links-page/static/css/main.771dae57.css.map",
-    "main.2c8642e6.js.map": "/links-page/static/js/main.2c8642e6.js.map"
+    "main.34b1c660.js.map": "/links-page/static/js/main.34b1c660.js.map"
   },
   "entrypoints": [
     "static/css/main.771dae57.css",
-    "static/js/main.2c8642e6.js"
+    "static/js/main.34b1c660.js"
   ]
 }
