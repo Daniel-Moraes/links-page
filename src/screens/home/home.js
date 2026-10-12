@@ -3,6 +3,7 @@ import { FiArrowUpRight, FiBookOpen, FiMusic } from 'react-icons/fi';
 import { FaInstagram, FaYoutube } from 'react-icons/fa';
 import { SiTiktok } from 'react-icons/si';
 import './home.css';
+import { trackLinkClick } from './analytics';
 const ebook = 'https://go.hotmart.com/W107987276G?redirectionUrl=https%3A%2F%2Falemdamissa.hotmart.host%2Fdaniel-moraes-7-dias-para-dar-o-primeiro-passo';
 const socials = [
  { name:'Instagram', description:'A fé também se vive no dia a dia.', url:'https://www.instagram.com/alemdamissa/', icon:<FaInstagram /> },
@@ -18,7 +19,7 @@ export default function Home(){return <main className="adm-page">
    <p className="adm-eyebrow">DANIEL MORAES</p><h1>Além da <em>Missa</em></h1>
    <p className="adm-intro">A fé que começa no altar<br/>continua na vida.</p><span className="adm-handle">@alemdamissa</span>
   </header>
-  <a className="adm-feature adm-glass" href={ebook} target="_blank" rel="noopener noreferrer" aria-label="Conheça o guia Quero rezar, mas não sei como começar na Hotmart (abre em nova aba)">
+  <a className="adm-feature adm-glass" href={ebook} onClick={() => trackLinkClick('ebook', ebook)} target="_blank" rel="noopener noreferrer" aria-label="Conheça o guia Quero rezar, mas não sei como começar na Hotmart (abre em nova aba)">
    <span className="adm-feature-top"><span className="adm-label"><FiBookOpen aria-hidden="true"/> UM PASSO DE CADA VEZ</span><FiArrowUpRight aria-hidden="true"/></span>
    <div className="adm-feature-body">
     <div className="adm-book" aria-hidden="true"><span>ALÉM DA MISSA</span><strong>7<small>dias</small></strong><div className="adm-book-line"/><p>para dar o<br/>primeiro passo</p><span>DANIEL MORAES</span></div>
@@ -26,9 +27,9 @@ export default function Home(){return <main className="adm-page">
    </div>
   </a>
   <nav className="adm-socials" aria-label="Redes sociais do Além da Missa"><p className="adm-section-label">CAMINHE COMIGO</p>
-   {socials.map(s=><a key={s.name} className="adm-social adm-glass" href={s.url} target="_blank" rel="noopener noreferrer" aria-label={`${s.name}: @alemdamissa (abre em nova aba)`}><span className="adm-icon" aria-hidden="true">{s.icon}</span><span className="adm-social-copy"><strong>{s.name}</strong><span>{s.description}</span></span><FiArrowUpRight className="adm-link-arrow" aria-hidden="true"/></a>)}
+   {socials.map(s=><a key={s.name} className="adm-social adm-glass" href={s.url} onClick={() => trackLinkClick(s.name.toLowerCase(), s.url)} target="_blank" rel="noopener noreferrer" aria-label={`${s.name}: @alemdamissa (abre em nova aba)`}><span className="adm-icon" aria-hidden="true">{s.icon}</span><span className="adm-social-copy"><strong>{s.name}</strong><span>{s.description}</span></span><FiArrowUpRight className="adm-link-arrow" aria-hidden="true"/></a>)}
   </nav>
-  <a className="adm-playlist" href="https://open.spotify.com/playlist/6Z24nvgeNkYYo7YwmRqvhm" target="_blank" rel="noopener noreferrer"><FiMusic aria-hidden="true"/><span>Minha playlist católica<small>Uma trilha para os seus dias.</small></span><FiArrowUpRight aria-hidden="true"/></a>
+  <a className="adm-playlist" href="https://open.spotify.com/playlist/6Z24nvgeNkYYo7YwmRqvhm" onClick={() => trackLinkClick('spotify', 'https://open.spotify.com/playlist/6Z24nvgeNkYYo7YwmRqvhm')} target="_blank" rel="noopener noreferrer"><FiMusic aria-hidden="true"/><span>Minha playlist católica<small>Uma trilha para os seus dias.</small></span><FiArrowUpRight aria-hidden="true"/></a>
   <footer className="adm-footer"><span className="adm-footer-line"/><p>Além da Missa <span>·</span> Fé para a vida.</p></footer>
  </div>
 </main>}
