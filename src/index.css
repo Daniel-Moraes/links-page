@@ -1,10 +1,1 @@
-* {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
-}
-
-::selection {
-  background-color: #9e00ff;
-  color: white;
-}
+html,body,#root{min-height:100%;margin:0}body{background:#0e2c20}button,a{-webkit-tap-highlight-color:transparent}
