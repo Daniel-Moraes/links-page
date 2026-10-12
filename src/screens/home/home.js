@@ -18,11 +18,11 @@ export default function Home(){return <main className="adm-page">
    <p className="adm-eyebrow">DANIEL MORAES</p><h1>Além da <em>Missa</em></h1>
    <p className="adm-intro">A fé que começa no altar<br/>continua na vida.</p><span className="adm-handle">@alemdamissa</span>
   </header>
-  <a className="adm-feature adm-glass" href={ebook} target="_blank" rel="noopener noreferrer" aria-label="Conheça o e-book 7 dias para dar o primeiro passo na Hotmart (abre em nova aba)">
+  <a className="adm-feature adm-glass" href={ebook} target="_blank" rel="noopener noreferrer" aria-label="Conheça o guia Quero rezar, mas não sei como começar na Hotmart (abre em nova aba)">
    <span className="adm-feature-top"><span className="adm-label"><FiBookOpen aria-hidden="true"/> UM PASSO DE CADA VEZ</span><FiArrowUpRight aria-hidden="true"/></span>
    <div className="adm-feature-body">
     <div className="adm-book" aria-hidden="true"><span>ALÉM DA MISSA</span><strong>7<small>dias</small></strong><div className="adm-book-line"/><p>para dar o<br/>primeiro passo</p><span>DANIEL MORAES</span></div>
-    <div className="adm-feature-copy"><span className="adm-tag">E-BOOK</span><h2>7 dias para dar<br/>o primeiro passo</h2><p>Seu próximo passo na fé<br/>pode começar hoje.</p><span className="adm-cta">Conheça o e-book <FiArrowUpRight aria-hidden="true"/></span></div>
+    <div className="adm-feature-copy"><span className="adm-tag">E-BOOK</span><h2>Quero rezar, mas não sei como começar.</h2><p>Um caminho de 7 dias para dar o primeiro passo.</p><span className="adm-cta">Conheça o e-book <FiArrowUpRight aria-hidden="true"/></span></div>
    </div>
   </a>
   <nav className="adm-socials" aria-label="Redes sociais do Além da Missa"><p className="adm-section-label">CAMINHE COMIGO</p>
